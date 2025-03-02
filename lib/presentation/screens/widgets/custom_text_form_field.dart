@@ -1,4 +1,4 @@
-import 'package:bankee/presentation/core/constants/constants.dart';
+import 'package:bankee/presentation/core/constants/media_constants.dart';
 import 'package:bankee/presentation/core/theme/theme.dart';
 import 'package:bankee/presentation/utils/responsiveSize.dart';
 import 'package:flutter/material.dart';

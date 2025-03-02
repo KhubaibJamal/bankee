@@ -1,4 +1,3 @@
-import 'package:bankee/presentation/core/constants/constants.dart';
 import 'package:bankee/presentation/core/theme/theme.dart';
 import 'package:bankee/presentation/utils/responsiveSize.dart';
 import 'package:flutter/material.dart';
@@ -57,7 +56,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
           child: Container(
             width: context.screenWidth,
             decoration: const BoxDecoration(
-              color: CustomColors.navBarColor,
+              color: CustomColors.primaryScreenColor,
               borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
             ),
             child: Padding(
@@ -76,7 +75,6 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                           color: CustomColors.primaryTextColor,
                           fontWeight: FontWeight.bold,
                           fontSize: context.font.extraLarge,
-                          fontFamily: Constants.fontFamily2,
                           letterSpacing: 0.37,
                         ),
                   ),
@@ -148,7 +146,6 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                                         color: CustomColors.primaryTextColor,
                                         fontWeight: FontWeight.w600,
                                         letterSpacing: 0.5,
-                                        fontFamily: Constants.fontFamily,
                                       )
                                   : selectedItem == null
                                       ? Theme.of(context)
@@ -161,7 +158,6 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                                                 CustomColors.primaryTextColor,
                                             fontWeight: FontWeight.w700,
                                             letterSpacing: 0.37,
-                                            fontFamily: Constants.fontFamily,
                                           )
                                       : Theme.of(context)
                                           .textTheme
@@ -173,7 +169,6 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                                                 CustomColors.secondaryTextColor,
                                             fontWeight: FontWeight.w400,
                                             letterSpacing: 0.15,
-                                            fontFamily: Constants.fontFamily4,
                                           ),
                             ),
                             subtitle: subtitle != null
@@ -188,7 +183,6 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                                               CustomColors.textFieldHintColor,
                                           fontWeight: FontWeight.w400,
                                           letterSpacing: 0.25,
-                                          fontFamily: Constants.fontFamily4,
                                         ),
                                   )
                                 : null,
