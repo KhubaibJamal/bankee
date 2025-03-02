@@ -1,4 +1,3 @@
-import 'package:bankee/presentation/core/constants/constants.dart';
 import 'package:bankee/presentation/core/theme/theme.dart';
 import 'package:bankee/presentation/utils/responsiveSize.dart';
 import 'package:bankee/presentation/utils/utils.dart';
@@ -105,26 +104,26 @@ class CustomButton extends StatelessWidget {
                 Text(
                   title,
                   style: btnTextStyle ??
-                       Theme.of(context).textTheme.displayLarge!.copyWith(
-                        color: textColor ?? CustomColors.primaryTextColor,
-                        fontSize: fontSize ?? context.font.larger.rf(context),
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: 1,
-                        fontFamily: Constants.fontFamily,
-                      ),
+                      Theme.of(context).textTheme.displayLarge!.copyWith(
+                            color: textColor ?? CustomColors.primaryTextColor,
+                            fontSize:
+                                fontSize ?? context.font.larger.rf(context),
+                            fontWeight: FontWeight.w600,
+                            letterSpacing: 1,
+                          ),
                 ),
               ] else ...[
                 if (showProgressTitle ?? false)
                   Text(
                     title,
                     style: btnTextStyle ??
-                         Theme.of(context).textTheme.displayLarge!.copyWith(
-                          color: textColor ?? CustomColors.primaryTextColor,
-                          fontSize: fontSize ?? context.font.larger.rf(context),
-                          fontWeight: FontWeight.w600,
-                          letterSpacing: 1,
-                          fontFamily: Constants.fontFamily,
-                        ),
+                        Theme.of(context).textTheme.displayLarge!.copyWith(
+                              color: textColor ?? CustomColors.primaryTextColor,
+                              fontSize:
+                                  fontSize ?? context.font.larger.rf(context),
+                              fontWeight: FontWeight.w600,
+                              letterSpacing: 1,
+                            ),
                   ),
               ],
             ],
