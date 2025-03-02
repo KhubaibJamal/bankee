@@ -330,6 +330,7 @@ ThemeData lightTheme = ThemeData(
 
 class CustomColors {
   static const Color primary = Color(0xFF4F3D56);
+  static const Color secondary = Color(0xFFFAFAFA);
   static const Color primaryTextColor = Color(0xFF1F2C37);
   static const Color secondaryTextColor = Color(0xFF78828A);
   static const Color bodyTextColor = Color(0xFF9CA4AB);
