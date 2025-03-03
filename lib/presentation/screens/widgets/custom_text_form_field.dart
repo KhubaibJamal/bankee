@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 
-
 class CustomTextFormField extends StatefulWidget {
   const CustomTextFormField({
     super.key,
@@ -111,7 +110,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       validator: widget.validator,
       keyboardType: widget.keyboard,
       decoration: InputDecoration(
-        contentPadding: widget.contentPadding,
+        contentPadding: EdgeInsets.symmetric(horizontal: 16),
         prefix: widget.prefix,
         prefixIcon: widget.prefixIcon != null
             ? Padding(
@@ -152,19 +151,21 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         hintText: widget.hintText,
         hintStyle: widget.hintStyle ??
             Theme.of(context).textTheme.displayMedium!.copyWith(
-                  color: CustomColors.textFieldHintColor,
-                  fontSize: context.font.large,
+                  color: CustomColors.secondaryTextColor,
+                  fontSize: context.font.normal,
                   fontWeight: FontWeight.w400,
-                  letterSpacing: 0.7,
                 ),
         filled: true,
         fillColor: widget.fillColor ?? CustomColors.textFieldFillColor,
         focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide.none, borderRadius: getBorderRadius()),
+            borderSide: BorderSide(color: CustomColors.card, width: 1.5),
+            borderRadius: BorderRadius.circular(20)),
         enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide.none, borderRadius: getBorderRadius()),
+            borderSide: BorderSide(color: CustomColors.card, width: 1.5),
+            borderRadius: BorderRadius.circular(20)),
         border: OutlineInputBorder(
-            borderSide: BorderSide.none, borderRadius: getBorderRadius()),
+            borderSide: BorderSide(color: CustomColors.card, width: 1.5),
+            borderRadius: BorderRadius.circular(20)),
       ),
     );
   }
@@ -173,27 +174,11 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
     return obscure
         ? const Icon(
             Icons.visibility,
-            color: CustomColors.textFieldHintColor,
+            color: CustomColors.primaryTextColor,
           )
         : const Icon(
             Icons.visibility_off,
-            color: CustomColors.textFieldHintColor,
+            color: CustomColors.primaryTextColor,
           );
-  }
-
-  BorderRadius getBorderRadius() {
-    return widget.isLeftBorder == null && widget.isRightBorder == null
-        ? BorderRadius.circular(12)
-        : widget.isLeftBorder == true
-            ? const BorderRadius.only(
-                topLeft: Radius.circular(12),
-                bottomLeft: Radius.circular(12),
-              )
-            : widget.isRightBorder == true
-                ? const BorderRadius.only(
-                    topRight: Radius.circular(12),
-                    bottomRight: Radius.circular(12),
-                  )
-                : BorderRadius.zero;
   }
 }
