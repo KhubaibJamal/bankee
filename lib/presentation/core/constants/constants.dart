@@ -30,4 +30,23 @@ class Constants {
       "image": MediaConstants.onboarding3,
     },
   ];
+
+  // sign in screen
+  static const String signin = "Sign In";
+  static const String welcomeBack = "Hi, Welcome Back! 👋";
+  static const String welcomeSubtitle =
+      "Please sign in to continue your journey";
+  static const String emailAddress = "Email Address";
+  static const String password = "Password";
+  static const String forgotPassword = "Forgot Password";
+  static const String rememberMe = "Remember Me";
+  static const String dontHaveAnAccount = "Don't have an account?";
+  static const String signUp = "Sign UP";
+  static const String orSignInWith = "Or Sign in with";
+  static const String orSignUpWith = "Or Sign up with";
+  static const String createAccount = "Create Account";
+  static const String createAccountSubtitle = "Join us today and explore endless possibilities.";
+  static const String fullName = "Full Name";
+
+  //
 }

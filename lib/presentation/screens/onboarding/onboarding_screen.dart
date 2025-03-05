@@ -1,5 +1,6 @@
 import 'package:bankee/presentation/core/constants/constants.dart';
 import 'package:bankee/presentation/core/theme/theme.dart';
+import 'package:bankee/presentation/routes/routes.dart';
 import 'package:bankee/presentation/screens/onboarding/widget/onboarding_content.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +36,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             _currentPage == 2
                 ? TextButton(
                     onPressed: () {
-                      // Navigator.pushNamed(context, "/login");
+                      Navigator.pushReplacementNamed(
+                          context, RouteNames.signinScreen);
                     },
                     child: Text(
                       "Get Started",

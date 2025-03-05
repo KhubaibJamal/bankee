@@ -230,6 +230,7 @@ ThemeData lightTheme = ThemeData(
       fontWeight: FontWeight.bold,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
     // Sub Heading
     displayMedium: TextStyle(
@@ -237,6 +238,7 @@ ThemeData lightTheme = ThemeData(
       fontWeight: FontWeight.w600,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
     // Section Heading
     displaySmall: TextStyle(
@@ -244,6 +246,7 @@ ThemeData lightTheme = ThemeData(
       fontWeight: FontWeight.w500,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
 
     // Card Titles
@@ -252,18 +255,21 @@ ThemeData lightTheme = ThemeData(
       fontWeight: FontWeight.w600,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
     headlineMedium: TextStyle(
       fontSize: 20,
       fontWeight: FontWeight.w500,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
     headlineSmall: TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w400,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
 
     // Bold Titles
@@ -272,18 +278,21 @@ ThemeData lightTheme = ThemeData(
       fontWeight: FontWeight.w700,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
     titleMedium: TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.w600,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
     titleSmall: TextStyle(
       fontSize: 12,
       fontWeight: FontWeight.w500,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
 
     // Main body text
@@ -292,18 +301,21 @@ ThemeData lightTheme = ThemeData(
       fontWeight: FontWeight.normal,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
     bodyMedium: TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.normal,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
     bodySmall: TextStyle(
       fontSize: 12,
       fontWeight: FontWeight.normal,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
 
     // Buttons
@@ -312,18 +324,21 @@ ThemeData lightTheme = ThemeData(
       fontWeight: FontWeight.w600,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
     labelMedium: TextStyle(
       fontSize: 12,
       fontWeight: FontWeight.w500,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
     labelSmall: TextStyle(
       fontSize: 10,
       fontWeight: FontWeight.w400,
       color: CustomColors.primaryTextColor,
       fontFamily: 'Inter',
+      letterSpacing: 0.5,
     ),
   ),
 );
@@ -336,14 +351,14 @@ class CustomColors {
   static const Color bodyTextColor = Color(0xFF9CA4AB);
   static const Color bodyGrey = Color(0xFFEFF0F1);
   static const Color textFieldHintColor = Color(0xFF78828A);
-  static const Color textFieldFillColor = Color(0xFFFFFFFF);
-  static const Color primaryScreenColor = Color(0xFFFFFFFF);
+  static const Color textFieldFillColor = Color(0xFFFDFDFD);
+  static const Color primaryScreenColor = Color(0xFFE5E5E5);
   static const Color red = Color(0xFFFF3838);
-  static Color black = Colors.black;
-  static Color white = Colors.white;
-  static Color grey = Colors.grey;
+  static const Color black = Colors.black;
+  static const Color white = Colors.white;
+  static const Color grey = Colors.grey;
   static const Color errorMessageColor = Color.fromARGB(255, 166, 4, 4);
   static const Color warningMessageColor = Color(0xFFC2AF6F);
-  static Color success = const Color(0xFF5fa777);
-  static Color card = const Color(0xFFECF1F6);
+  static const Color success = Color(0xFF5fa777);
+  static const Color card = Color(0xFFECF1F6);
 }
