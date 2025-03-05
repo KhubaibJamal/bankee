@@ -78,7 +78,7 @@ class CustomButton extends StatelessWidget {
           padding: padding,
           shape: RoundedRectangleBorder(
             side: border ?? BorderSide.none,
-            borderRadius: BorderRadius.circular(radius ?? 10),
+            borderRadius: BorderRadius.circular(radius ?? 5),
           ),
           elevation: (showElevation ?? true) ? 0.5 : 0,
           color: buttonColor ?? CustomColors.primary,
@@ -105,7 +105,7 @@ class CustomButton extends StatelessWidget {
                   title,
                   style: btnTextStyle ??
                       Theme.of(context).textTheme.displayLarge!.copyWith(
-                            color: textColor ?? CustomColors.primaryTextColor,
+                            color: textColor ?? CustomColors.white,
                             fontSize:
                                 fontSize ?? context.font.larger.rf(context),
                             fontWeight: FontWeight.w600,
@@ -118,7 +118,7 @@ class CustomButton extends StatelessWidget {
                     title,
                     style: btnTextStyle ??
                         Theme.of(context).textTheme.displayLarge!.copyWith(
-                              color: textColor ?? CustomColors.primaryTextColor,
+                              color: textColor ?? CustomColors.white,
                               fontSize:
                                   fontSize ?? context.font.larger.rf(context),
                               fontWeight: FontWeight.w600,

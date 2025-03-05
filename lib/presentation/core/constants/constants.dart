@@ -34,7 +34,8 @@ class Constants {
   // sign in screen
   static const String signin = "Sign In";
   static const String welcomeBack = "Hi, Welcome Back! 👋";
-  static const String welcomeSubtitle = "Please sign in to continue your journey";
+  static const String welcomeSubtitle =
+      "Please sign in to continue your journey";
   static const String emailAddress = "Email Address";
   static const String password = "Password";
   static const String forgotPassword = "Forgot Password";
@@ -42,4 +43,6 @@ class Constants {
   static const String dontHaveAnAccount = "Don't have an account?";
   static const String signUp = "Sign UP";
   static const String orSignInWith = "Or Sign in with";
+
+  //Join us today and explore endless possibilities.
 }
