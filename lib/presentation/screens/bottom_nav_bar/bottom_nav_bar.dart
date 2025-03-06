@@ -1,6 +1,7 @@
 import 'package:bankee/presentation/core/constants/constants.dart';
 import 'package:bankee/presentation/core/constants/media_constants.dart';
 import 'package:bankee/presentation/core/theme/theme.dart';
+import 'package:bankee/presentation/screens/widgets/custom_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -158,33 +159,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ),
         ],
       ),
-    );
-  }
-}
-
-class CustomSafeArea extends StatelessWidget {
-  final Widget child;
-  final Color? bgColor;
-  final bool? showBorder;
-  const CustomSafeArea({
-    super.key,
-    required this.child,
-    this.bgColor,
-    this.showBorder = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: bgColor ?? CustomColors.primaryScreenColor,
-        borderRadius: showBorder == true
-            ? const BorderRadius.vertical(
-                top: Radius.circular(24),
-              )
-            : null,
-      ),
-      child: SafeArea(child: child),
     );
   }
 }
