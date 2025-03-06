@@ -45,8 +45,13 @@ class Constants {
   static const String orSignInWith = "Or Sign in with";
   static const String orSignUpWith = "Or Sign up with";
   static const String createAccount = "Create Account";
-  static const String createAccountSubtitle = "Join us today and explore endless possibilities.";
+  static const String createAccountSubtitle =
+      "Join us today and explore endless possibilities.";
   static const String fullName = "Full Name";
 
-  //
+  // bottom nav bar
+  static const String home = "Home";
+  static const String statistic = "Statistics";
+  static const String myCard = "My Card";
+  static const String profile = "Profile";
 }

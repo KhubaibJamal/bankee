@@ -114,7 +114,9 @@ class _SigninScreenState extends State<SigninScreen> {
               // sign in button
               SizedBox(height: 20.rh(context)),
               CustomButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, RouteNames.bottomNavBar);
+                },
                 buttonTitle: Constants.signin,
               ),
 

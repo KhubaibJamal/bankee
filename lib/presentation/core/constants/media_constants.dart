@@ -18,4 +18,14 @@ class MediaConstants {
     "${svgPath}apple.svg",
     "${svgPath}facebook.svg",
   ];
+
+  // bottom nav bar
+  static const String homeIcon = "${svgPath}home.svg";
+  static const String homeFilledIcon = "${svgPath}home-filled.svg";
+  static const String statisticIcon = "${svgPath}statistic.svg";
+  static const String statisticFilledIcon = "${svgPath}statistic-filled.svg";
+  static const String walletIcon = "${svgPath}wallet.svg";
+  static const String walletFilledIcon = "${svgPath}wallet-filled.svg";
+  static const String profileIcon = "${svgPath}profile.svg";
+  static const String profileFilledIcon = "${svgPath}profile-filled.svg";
 }
