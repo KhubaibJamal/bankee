@@ -38,7 +38,6 @@ class Constants {
       "Please sign in to continue your journey";
   static const String emailAddress = "Email Address";
   static const String password = "Password";
-  static const String forgotPassword = "Forgot Password";
   static const String rememberMe = "Remember Me";
   static const String dontHaveAnAccount = "Don't have an account?";
   static const String signUp = "Sign UP";
@@ -48,6 +47,12 @@ class Constants {
   static const String createAccountSubtitle =
       "Join us today and explore endless possibilities.";
   static const String fullName = "Full Name";
+
+  // forgot password screen
+  static const String forgotPassword = "Forgot Password";
+  static const String forgotPasswordSubtitle = "Recover your account password";
+  static const String eMail = "E-mail";
+  static const String submit = "Submit";
 
   // bottom nav bar
   static const String home = "Home";

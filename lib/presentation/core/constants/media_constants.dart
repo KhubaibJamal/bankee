@@ -12,6 +12,7 @@ class MediaConstants {
 
   static const String closeIcon = "${svgPath}close.svg";
   static const String checkBoxIcon = "${svgPath}check-box-icon.svg";
+  static const String arrowLeft = "${svgPath}arrow_left.svg";
 
   static const List<String> socialIcons = [
     "${svgPath}google.svg",

@@ -99,7 +99,10 @@ class _SigninScreenState extends State<SigninScreen> {
                   ),
                   // const Spacer(),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(
+                          context, RouteNames.forgotPasswordScreen);
+                    },
                     child: Text(
                       Constants.forgotPassword,
                       style: Theme.of(context).textTheme.bodyLarge!.copyWith(

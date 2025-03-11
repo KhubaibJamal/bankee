@@ -16,7 +16,7 @@ class CustomSafeArea extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: bgColor ?? CustomColors.primaryScreenColor,
+        color: bgColor ?? CustomColors.white,
         borderRadius: showBorder == true
             ? const BorderRadius.vertical(
                 top: Radius.circular(24),
