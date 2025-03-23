@@ -1,11 +1,8 @@
-
-
-
-import 'dart:math';
 import 'package:bankee/presentation/core/theme/theme.dart';
+import 'package:bankee/presentation/screens/widgets/dot_indicator.dart';
+import 'package:bankee/presentation/screens/widgets/full_circle_painter.dart';
 import 'package:bankee/presentation/utils/responsiveSize.dart';
 import 'package:flutter/material.dart';
-
 
 class OnboardingContent extends StatelessWidget {
   final String title;
@@ -56,7 +53,15 @@ class OnboardingContent extends StatelessWidget {
               child: Row(
                 children: List.generate(
                   totalPages,
-                  (index) => buildDot(index),
+                  (index) {
+                    return DotIndicator(
+                      currentPage: currentPage,
+                      index: index,
+                      activeColor: CustomColors.primaryScreenColor,
+                      inactiveColor:
+                          CustomColors.primary.withValues(alpha: 0.8),
+                    );
+                  },
                 ),
               ),
             ),
@@ -75,7 +80,7 @@ class OnboardingContent extends StatelessWidget {
           left: -100,
           child: CustomPaint(
             size: const Size(300, 150),
-            painter: FullCirclePainter(),
+            painter: FullCirclePainter(color: Colors.white),
           ),
         ),
       ],
@@ -94,25 +99,5 @@ class OnboardingContent extends StatelessWidget {
         borderRadius: BorderRadius.circular(5),
       ),
     );
-  }
-}
-
-class FullCirclePainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    Paint paint = Paint()
-      ..color = Colors.white.withValues(alpha: 0.1)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 30.0
-      ..strokeCap = StrokeCap.round;
-
-    Rect rect = Rect.fromLTWH(0, 0, size.width, size.height * 2);
-    // canvas.drawArc(rect, pi, pi, false, paint);
-    canvas.drawArc(rect, 0, 2 * pi, false, paint);
-  }
-
-  @override
-  bool shouldRepaint(CustomPainter oldDelegate) {
-    return false;
   }
 }

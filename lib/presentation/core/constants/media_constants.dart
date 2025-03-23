@@ -12,10 +12,28 @@ class MediaConstants {
 
   static const String closeIcon = "${svgPath}close.svg";
   static const String checkBoxIcon = "${svgPath}check-box-icon.svg";
+  static const String arrowLeft = "${svgPath}arrow_left.svg";
 
   static const List<String> socialIcons = [
     "${svgPath}google.svg",
     "${svgPath}apple.svg",
     "${svgPath}facebook.svg",
   ];
+
+  // bottom nav bar
+  static const String homeIcon = "${svgPath}home.svg";
+  static const String homeFilledIcon = "${svgPath}home-filled.svg";
+  static const String statisticIcon = "${svgPath}statistic.svg";
+  static const String statisticFilledIcon = "${svgPath}statistic-filled.svg";
+  static const String walletIcon = "${svgPath}wallet.svg";
+  static const String walletFilledIcon = "${svgPath}wallet-filled.svg";
+  static const String profileIcon = "${svgPath}profile.svg";
+  static const String profileFilledIcon = "${svgPath}profile-filled.svg";
+
+  // home screen
+  static const String notificationIcon = "${svgPath}notification.svg";
+  static const String requestMoney = "${svgPath}request-money.svg";
+  static const String sendMoney = "${svgPath}send-money.svg";
+  static const String user = "${svgPath}user.svg";
+
 }

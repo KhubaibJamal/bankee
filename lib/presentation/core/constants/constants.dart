@@ -38,15 +38,48 @@ class Constants {
       "Please sign in to continue your journey";
   static const String emailAddress = "Email Address";
   static const String password = "Password";
-  static const String forgotPassword = "Forgot Password";
   static const String rememberMe = "Remember Me";
   static const String dontHaveAnAccount = "Don't have an account?";
   static const String signUp = "Sign UP";
   static const String orSignInWith = "Or Sign in with";
   static const String orSignUpWith = "Or Sign up with";
   static const String createAccount = "Create Account";
-  static const String createAccountSubtitle = "Join us today and explore endless possibilities.";
+  static const String createAccountSubtitle =
+      "Join us today and explore endless possibilities.";
   static const String fullName = "Full Name";
 
-  //
+  // forgot password screen
+  static const String forgotPassword = "Forgot Password";
+  static const String forgotPasswordSubtitle = "Recover your account password";
+  static const String eMail = "E-mail";
+  static const String submit = "Submit";
+
+  // bottom nav bar
+  static const String home = "Home";
+  static const String statistic = "Statistics";
+  static const String myCard = "My Card";
+  static const String profile = "Profile";
+
+  static const List<Map<String, dynamic>> homeGridItems = [
+    {
+      "title": "Send Money",
+      "subtitle": "Take acc to acc",
+      "svgImage": MediaConstants.sendMoney,
+    },
+    {
+      "title": "Pay the Bill",
+      "subtitle": "Utilities",
+      "svgImage": MediaConstants.walletFilledIcon,
+    },
+    {
+      "title": "Request",
+      "subtitle": "Ask for money",
+      "svgImage": MediaConstants.requestMoney,
+    },
+    {
+      "title": "Contact",
+      "subtitle": "Saved contacts",
+      "svgImage": MediaConstants.user,
+    },
+  ];
 }

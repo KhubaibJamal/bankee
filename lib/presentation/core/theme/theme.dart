@@ -1,168 +1,168 @@
 import 'package:flutter/material.dart';
 
-ThemeData darkTheme = ThemeData(
-  iconTheme: const IconThemeData(color: CustomColors.primary),
-  fontFamily: 'Inter',
-  snackBarTheme: const SnackBarThemeData(
-      backgroundColor: CustomColors.primary,
-      behavior: SnackBarBehavior.floating),
-  dialogTheme: DialogTheme(
-    backgroundColor: CustomColors.white,
-  ),
-  bottomSheetTheme: const BottomSheetThemeData(
-      backgroundColor: Colors.white,
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(20), topRight: Radius.circular(20)))),
-  bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: CustomColors.white,
-      unselectedItemColor: CustomColors.grey,
-      selectedItemColor: CustomColors.white),
-  splashColor: CustomColors.white.withValues(alpha: .5),
-  highlightColor: CustomColors.white.withValues(alpha: .5),
-  textSelectionTheme: TextSelectionThemeData(
-    cursorColor: CustomColors.primary,
-    selectionColor: CustomColors.primary,
-    selectionHandleColor: CustomColors.white,
-  ),
-  colorScheme: ColorScheme.fromSwatch(
-    accentColor: CustomColors.primary,
-  ),
-  checkboxTheme: CheckboxThemeData(side: BorderSide(color: CustomColors.white)),
-  listTileTheme: ListTileThemeData(
-      shape: RoundedRectangleBorder(
-          side: BorderSide(color: CustomColors.grey),
-          borderRadius: BorderRadius.circular(5))),
-  textButtonTheme: const TextButtonThemeData(
-      style: ButtonStyle(
-          foregroundColor: WidgetStatePropertyAll(CustomColors.primary))),
-  dividerColor: CustomColors.grey,
-  appBarTheme: AppBarTheme(
-      color: CustomColors.black,
-      elevation: 0,
-      foregroundColor: CustomColors.white),
-  scaffoldBackgroundColor: CustomColors.black,
-  primaryColor: CustomColors.primary,
-  primaryColorLight: CustomColors.primary.withValues(alpha: .5),
-  brightness: Brightness.light,
-  hintColor: CustomColors.grey,
-  switchTheme: SwitchThemeData(
-      thumbColor:
-          WidgetStateProperty.all(CustomColors.primary.withValues(alpha: .8)),
-      trackColor:
-          WidgetStateProperty.all(CustomColors.primary.withValues(alpha: .1))),
-  elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ButtonStyle(
-          shape: WidgetStatePropertyAll(
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
-          fixedSize: const WidgetStatePropertyAll<Size>(Size(999, 50)),
-          backgroundColor: const WidgetStatePropertyAll(CustomColors.primary),
-          padding: const WidgetStatePropertyAll<EdgeInsetsGeometry>(
-              EdgeInsets.symmetric(horizontal: 10, vertical: 10)))),
-  textTheme: TextTheme(
-    // Main Heading
-    displayLarge: TextStyle(
-      fontSize: 32,
-      fontWeight: FontWeight.bold,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-    // Sub Heading
-    displayMedium: TextStyle(
-      fontSize: 28,
-      fontWeight: FontWeight.w600,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-    // Section Heading
-    displaySmall: TextStyle(
-      fontSize: 24,
-      fontWeight: FontWeight.w500,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
+// ThemeData darkTheme = ThemeData(
+//   iconTheme: const IconThemeData(color: CustomColors.primary),
+//   fontFamily: 'Inter',
+//   snackBarTheme: const SnackBarThemeData(
+//       backgroundColor: CustomColors.primary,
+//       behavior: SnackBarBehavior.floating),
+//   dialogTheme: DialogTheme(
+//     backgroundColor: CustomColors.white,
+//   ),
+//   bottomSheetTheme: const BottomSheetThemeData(
+//       backgroundColor: Colors.white,
+//       shape: RoundedRectangleBorder(
+//           borderRadius: BorderRadius.only(
+//               topLeft: Radius.circular(20), topRight: Radius.circular(20)))),
+//   bottomNavigationBarTheme: BottomNavigationBarThemeData(
+//       backgroundColor: CustomColors.white,
+//       unselectedItemColor: CustomColors.grey,
+//       selectedItemColor: CustomColors.white),
+//   splashColor: CustomColors.white.withValues(alpha: .5),
+//   highlightColor: CustomColors.white.withValues(alpha: .5),
+//   textSelectionTheme: TextSelectionThemeData(
+//     cursorColor: CustomColors.primary,
+//     selectionColor: CustomColors.primary,
+//     selectionHandleColor: CustomColors.white,
+//   ),
+//   colorScheme: ColorScheme.fromSwatch(
+//     accentColor: CustomColors.primary,
+//   ),
+//   checkboxTheme: CheckboxThemeData(side: BorderSide(color: CustomColors.white)),
+//   listTileTheme: ListTileThemeData(
+//       shape: RoundedRectangleBorder(
+//           side: BorderSide(color: CustomColors.grey),
+//           borderRadius: BorderRadius.circular(5))),
+//   textButtonTheme: const TextButtonThemeData(
+//       style: ButtonStyle(
+//           foregroundColor: WidgetStatePropertyAll(CustomColors.primary))),
+//   dividerColor: CustomColors.grey,
+//   appBarTheme: AppBarTheme(
+//       color: CustomColors.black,
+//       elevation: 0,
+//       foregroundColor: CustomColors.white),
+//   scaffoldBackgroundColor: CustomColors.black,
+//   primaryColor: CustomColors.primary,
+//   primaryColorLight: CustomColors.primary.withValues(alpha: .5),
+//   brightness: Brightness.light,
+//   hintColor: CustomColors.grey,
+//   switchTheme: SwitchThemeData(
+//       thumbColor:
+//           WidgetStateProperty.all(CustomColors.primary.withValues(alpha: .8)),
+//       trackColor:
+//           WidgetStateProperty.all(CustomColors.primary.withValues(alpha: .1))),
+//   elevatedButtonTheme: ElevatedButtonThemeData(
+//       style: ButtonStyle(
+//           shape: WidgetStatePropertyAll(
+//               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
+//           fixedSize: const WidgetStatePropertyAll<Size>(Size(999, 50)),
+//           backgroundColor: const WidgetStatePropertyAll(CustomColors.primary),
+//           padding: const WidgetStatePropertyAll<EdgeInsetsGeometry>(
+//               EdgeInsets.symmetric(horizontal: 10, vertical: 10)))),
+//   textTheme: TextTheme(
+//     // Main Heading
+//     displayLarge: TextStyle(
+//       fontSize: 32,
+//       fontWeight: FontWeight.bold,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//     // Sub Heading
+//     displayMedium: TextStyle(
+//       fontSize: 28,
+//       fontWeight: FontWeight.w600,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//     // Section Heading
+//     displaySmall: TextStyle(
+//       fontSize: 24,
+//       fontWeight: FontWeight.w500,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
 
-    // Card Titles
-    headlineLarge: TextStyle(
-      fontSize: 22,
-      fontWeight: FontWeight.w600,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-    headlineMedium: TextStyle(
-      fontSize: 20,
-      fontWeight: FontWeight.w500,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-    headlineSmall: TextStyle(
-      fontSize: 18,
-      fontWeight: FontWeight.w400,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
+//     // Card Titles
+//     headlineLarge: TextStyle(
+//       fontSize: 22,
+//       fontWeight: FontWeight.w600,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//     headlineMedium: TextStyle(
+//       fontSize: 20,
+//       fontWeight: FontWeight.w500,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//     headlineSmall: TextStyle(
+//       fontSize: 18,
+//       fontWeight: FontWeight.w400,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
 
-    // Bold Titles
-    titleLarge: TextStyle(
-      fontSize: 16,
-      fontWeight: FontWeight.w700,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-    titleMedium: TextStyle(
-      fontSize: 14,
-      fontWeight: FontWeight.w600,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-    titleSmall: TextStyle(
-      fontSize: 12,
-      fontWeight: FontWeight.w500,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
+//     // Bold Titles
+//     titleLarge: TextStyle(
+//       fontSize: 16,
+//       fontWeight: FontWeight.w700,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//     titleMedium: TextStyle(
+//       fontSize: 14,
+//       fontWeight: FontWeight.w600,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//     titleSmall: TextStyle(
+//       fontSize: 12,
+//       fontWeight: FontWeight.w500,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
 
-    // Main body text
-    bodyLarge: TextStyle(
-      fontSize: 16,
-      fontWeight: FontWeight.normal,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-    bodyMedium: TextStyle(
-      fontSize: 14,
-      fontWeight: FontWeight.normal,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-    bodySmall: TextStyle(
-      fontSize: 12,
-      fontWeight: FontWeight.normal,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
+//     // Main body text
+//     bodyLarge: TextStyle(
+//       fontSize: 16,
+//       fontWeight: FontWeight.normal,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//     bodyMedium: TextStyle(
+//       fontSize: 14,
+//       fontWeight: FontWeight.normal,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//     bodySmall: TextStyle(
+//       fontSize: 12,
+//       fontWeight: FontWeight.normal,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
 
-    // Buttons
-    labelLarge: TextStyle(
-      fontSize: 14,
-      fontWeight: FontWeight.w600,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-    labelMedium: TextStyle(
-      fontSize: 12,
-      fontWeight: FontWeight.w500,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-    labelSmall: TextStyle(
-      fontSize: 10,
-      fontWeight: FontWeight.w400,
-      color: CustomColors.white,
-      fontFamily: 'Inter',
-    ),
-  ),
-);
+//     // Buttons
+//     labelLarge: TextStyle(
+//       fontSize: 14,
+//       fontWeight: FontWeight.w600,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//     labelMedium: TextStyle(
+//       fontSize: 12,
+//       fontWeight: FontWeight.w500,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//     labelSmall: TextStyle(
+//       fontSize: 10,
+//       fontWeight: FontWeight.w400,
+//       color: CustomColors.white,
+//       fontFamily: 'Inter',
+//     ),
+//   ),
+// );
 
 ThemeData lightTheme = ThemeData(
   primaryColor: CustomColors.primary,
@@ -345,6 +345,7 @@ ThemeData lightTheme = ThemeData(
 
 class CustomColors {
   static const Color primary = Color(0xFF4F3D56);
+  static const Color primaryDark = Color(0xFF160E2C);
   static const Color secondary = Color(0xFFFAFAFA);
   static const Color primaryTextColor = Color(0xFF1F2C37);
   static const Color secondaryTextColor = Color(0xFF78828A);

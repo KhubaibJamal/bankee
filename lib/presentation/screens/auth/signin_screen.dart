@@ -99,7 +99,10 @@ class _SigninScreenState extends State<SigninScreen> {
                   ),
                   // const Spacer(),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(
+                          context, RouteNames.forgotPasswordScreen);
+                    },
                     child: Text(
                       Constants.forgotPassword,
                       style: Theme.of(context).textTheme.bodyLarge!.copyWith(
@@ -114,7 +117,9 @@ class _SigninScreenState extends State<SigninScreen> {
               // sign in button
               SizedBox(height: 20.rh(context)),
               CustomButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, RouteNames.bottomNavBar);
+                },
                 buttonTitle: Constants.signin,
               ),
 
