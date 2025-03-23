@@ -1,4 +1,5 @@
 import 'package:bankee/presentation/core/theme/theme.dart';
+import 'package:bankee/presentation/screens/widgets/dot_indicator.dart';
 import 'package:bankee/presentation/screens/widgets/full_circle_painter.dart';
 import 'package:bankee/presentation/utils/responsiveSize.dart';
 import 'package:flutter/material.dart';
@@ -52,7 +53,15 @@ class OnboardingContent extends StatelessWidget {
               child: Row(
                 children: List.generate(
                   totalPages,
-                  (index) => buildDot(index),
+                  (index) {
+                    return DotIndicator(
+                      currentPage: currentPage,
+                      index: index,
+                      activeColor: CustomColors.primaryScreenColor,
+                      inactiveColor:
+                          CustomColors.primary.withValues(alpha: 0.8),
+                    );
+                  },
                 ),
               ),
             ),

@@ -32,4 +32,8 @@ class MediaConstants {
 
   // home screen
   static const String notificationIcon = "${svgPath}notification.svg";
+  static const String requestMoney = "${svgPath}request-money.svg";
+  static const String sendMoney = "${svgPath}send-money.svg";
+  static const String user = "${svgPath}user.svg";
+
 }

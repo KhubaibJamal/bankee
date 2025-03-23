@@ -59,4 +59,27 @@ class Constants {
   static const String statistic = "Statistics";
   static const String myCard = "My Card";
   static const String profile = "Profile";
+
+  static const List<Map<String, dynamic>> homeGridItems = [
+    {
+      "title": "Send Money",
+      "subtitle": "Take acc to acc",
+      "svgImage": MediaConstants.sendMoney,
+    },
+    {
+      "title": "Pay the Bill",
+      "subtitle": "Utilities",
+      "svgImage": MediaConstants.walletFilledIcon,
+    },
+    {
+      "title": "Request",
+      "subtitle": "Ask for money",
+      "svgImage": MediaConstants.requestMoney,
+    },
+    {
+      "title": "Contact",
+      "subtitle": "Saved contacts",
+      "svgImage": MediaConstants.user,
+    },
+  ];
 }
