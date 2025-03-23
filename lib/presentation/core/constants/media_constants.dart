@@ -29,4 +29,7 @@ class MediaConstants {
   static const String walletFilledIcon = "${svgPath}wallet-filled.svg";
   static const String profileIcon = "${svgPath}profile.svg";
   static const String profileFilledIcon = "${svgPath}profile-filled.svg";
+
+  // home screen
+  static const String notificationIcon = "${svgPath}notification.svg";
 }

@@ -1,6 +1,7 @@
 import 'package:bankee/presentation/core/constants/constants.dart';
 import 'package:bankee/presentation/core/constants/media_constants.dart';
 import 'package:bankee/presentation/core/theme/theme.dart';
+import 'package:bankee/presentation/screens/home/home_screen.dart';
 import 'package:bankee/presentation/screens/widgets/custom_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -38,7 +39,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     final List<Widget> screens = [
-      Container(color: Colors.amber),
+      const HomeScreen(),
       Container(color: Colors.blue),
       Container(color: Colors.red),
       Container(color: Colors.pink),
