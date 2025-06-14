@@ -40,7 +40,9 @@ class CustomTextFormField extends StatefulWidget {
     this.searchSvgColor,
     this.autofillHints,
     this.prefixContainer,
+    this.radius,
   });
+  final double? radius;
   final String? hintText;
   final TextEditingController? controller;
   final int? minLine;
@@ -159,13 +161,13 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         fillColor: widget.fillColor ?? CustomColors.textFieldFillColor,
         focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(color: CustomColors.card, width: 1.5),
-            borderRadius: BorderRadius.circular(20)),
+            borderRadius: BorderRadius.circular(widget.radius ?? 20)),
         enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(color: CustomColors.card, width: 1.5),
-            borderRadius: BorderRadius.circular(20)),
+            borderRadius: BorderRadius.circular(widget.radius ?? 20)),
         border: OutlineInputBorder(
             borderSide: BorderSide(color: CustomColors.card, width: 1.5),
-            borderRadius: BorderRadius.circular(20)),
+            borderRadius: BorderRadius.circular(widget.radius ?? 20)),
       ),
     );
   }

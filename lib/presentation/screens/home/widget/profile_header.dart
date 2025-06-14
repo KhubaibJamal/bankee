@@ -67,6 +67,7 @@ class ProfileHeader extends StatelessWidget {
                 assetName: MediaConstants.notificationIcon,
                 height: 24,
                 width: 24,
+                color: CustomColors.primary,
               ),
             ),
           ),

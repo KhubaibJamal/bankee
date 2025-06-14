@@ -1,5 +1,6 @@
 import 'package:bankee/presentation/core/constants/constants.dart';
 import 'package:bankee/presentation/core/theme/theme.dart';
+import 'package:bankee/presentation/routes/routes.dart';
 import 'package:bankee/presentation/screens/home/widget/grid_card.dart';
 import 'package:bankee/presentation/screens/home/widget/profile_header.dart';
 import 'package:bankee/presentation/screens/widgets/credit_card_widget.dart';
@@ -98,7 +99,25 @@ class _HomeScreenState extends State<HomeScreen> {
                   itemBuilder: (context, index) {
                     final data = Constants.homeGridItems[index];
                     return GridCard(
-                      onTap: () {},
+                      onTap: () {
+                        final action = data['onTap'];
+                        switch (action) {
+                          case 'sendMoney':
+                            // Navigate or perform action
+                            Navigator.pushNamed(
+                                context, RouteNames.sendMoneyScreen);
+                            break;
+                          case 'payBill':
+                            print("payBill");
+                            break;
+                          case 'requestMoney':
+                            print("requestMoney");
+                            break;
+                          case 'contact':
+                            print("contact");
+                            break;
+                        }
+                      },
                       title: data['title'],
                       subtitle: data['subtitle'],
                       svgImage: data['svgImage'],
