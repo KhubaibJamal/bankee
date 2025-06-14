@@ -4,6 +4,7 @@ import 'package:bankee/presentation/screens/auth/signup_screen.dart';
 import 'package:bankee/presentation/screens/bottom_nav_bar/bottom_nav_bar.dart';
 import 'package:bankee/presentation/screens/home/home_screen.dart';
 import 'package:bankee/presentation/screens/onboarding/onboarding_screen.dart';
+import 'package:bankee/presentation/screens/send_money_screen/send_money_screen.dart';
 import 'package:bankee/presentation/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,7 @@ class RouteNames {
   static const String forgotPasswordScreen = 'forgot_password_screen';
   static const String bottomNavBar = 'bottom_nav_bar';
   static const String homeScreen = 'home_screen';
+  static const String sendMoneyScreen = 'send_money_screen';
 }
 
 class Routes {
@@ -47,6 +49,10 @@ class Routes {
       case RouteNames.homeScreen:
         return MaterialPageRoute(
             builder: (BuildContext context) => const HomeScreen());
+
+      case RouteNames.sendMoneyScreen:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => const SendMoneyScreen());
 
       default:
         return MaterialPageRoute(

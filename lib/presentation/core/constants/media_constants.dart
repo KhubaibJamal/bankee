@@ -36,4 +36,8 @@ class MediaConstants {
   static const String sendMoney = "${svgPath}send-money.svg";
   static const String user = "${svgPath}user.svg";
 
+  // send money screen
+  static const String add = "${svgPath}add.svg";
+  static const String favoriteBorder = "${svgPath}favorite_border.svg";
+  static const String favoriteFilled = "${svgPath}favorite_filled.svg";
 }

@@ -65,21 +65,32 @@ class Constants {
       "title": "Send Money",
       "subtitle": "Take acc to acc",
       "svgImage": MediaConstants.sendMoney,
+      "onTap": "sendMoney",
     },
     {
       "title": "Pay the Bill",
       "subtitle": "Utilities",
       "svgImage": MediaConstants.walletFilledIcon,
+      "onTap": "payBill",
     },
     {
       "title": "Request",
       "subtitle": "Ask for money",
       "svgImage": MediaConstants.requestMoney,
+      "onTap": "requestMoney",
     },
     {
       "title": "Contact",
       "subtitle": "Saved contacts",
       "svgImage": MediaConstants.user,
+      "onTap": "contact",
     },
   ];
+
+  // send money screen
+  static const String sendMoney = "Send Money";
+  static const String searchContacts = "SearchContacts...";
+  static const String all = "All";
+  static const String favorites = "Favorites";
+  static const List<String> tabs = ['All', 'Favorite', 'Bank', 'e-Wallet'];
 }
